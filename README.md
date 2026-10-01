@@ -10,4 +10,4 @@ Conjugations come from [Lefff](https://www.labri.fr/perso/clement/lefff/) (Inria
 
 The German version lives in [`deutsch/`](deutsch/): the 500 most common German verbs plus 32 reflexive verbs, every tense including Konjunktiv I for reported speech, and Partizip II. Open `/deutsch/` on the site and add it to the home screen separately.
 
-German conjugations come from Morphy (Wolfgang Lezius) via german-pos-dict / korrekturen.de and the `german-verbs-dict` package (CC BY-SA 4.0), updated to the 1996 spelling reform with corrections to separable/inseparable verbs. Verb frequency: OpenSubtitles German word list. Font: Archivo (SIL Open Font License).
+German conjugations come from Morphy (Wolfgang Lezius) via german-pos-dict / korrekturen.de and the `german-verbs-dict` package (CC BY-SA 4.0), updated to the 1996 spelling reform with corrections to separable/inseparable verbs. Verb frequency: OpenSubtitles German word list. Fonts: Bodoni Moda, Josefin Sans and Source Sans 3 (SIL Open Font License).
