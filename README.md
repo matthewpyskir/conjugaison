@@ -11,3 +11,9 @@ Conjugations come from [Lefff](https://www.labri.fr/perso/clement/lefff/) (Inria
 The German version lives in [`deutsch/`](deutsch/): the 500 most common German verbs plus 32 reflexive verbs, every tense including Konjunktiv I for reported speech, and Partizip II. Open `/deutsch/` on the site and add it to the home screen separately.
 
 German conjugations come from Morphy (Wolfgang Lezius) via german-pos-dict / korrekturen.de and the `german-verbs-dict` package (CC BY-SA 4.0), updated to the 1996 spelling reform with corrections to separable/inseparable verbs. Verb frequency: OpenSubtitles German word list. Fonts: Bodoni Moda, Josefin Sans and Source Sans 3 (SIL Open Font License).
+
+## Czasowniki (Polish)
+
+The Polish version lives in [`polski/`](polski/): the 500 most common Polish verbs plus 30 extra *się* verbs, with aspect marked on every verb, present, past (masculine and feminine), future, conditional, imperative, the passive and adverbial participles, and the impersonal -no/-to form.
+
+Polish conjugations come from SGJP, the Grammatical Dictionary of Polish (Institute of Computer Science, Polish Academy of Sciences, BSD 2-clause licence), generated with Morfeusz 2 (dictionary version 2026-06-01). Verb frequency: OpenSubtitles Polish word list. Fonts: Poltawski Nowy and Lato (SIL Open Font License).

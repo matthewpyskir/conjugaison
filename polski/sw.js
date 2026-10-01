@@ -1,6 +1,6 @@
 // Offline support: keep a copy of every app file on the device.
 // Bump VERSION whenever index.html changes so phones pick up the update.
-const VERSION = "conjugaison-v4";
+const VERSION = "czasowniki-v1";
 const FILES = [
   "./",
   "index.html",
@@ -9,20 +9,18 @@ const FILES = [
   "icon-256.png",
   "icon-512.png",
   "apple-touch-icon.png",
-  "fonts/CormorantGaramond-500-latin-ext.woff2",
-  "fonts/CormorantGaramond-500-latin.woff2",
-  "fonts/CormorantGaramond-500i-latin-ext.woff2",
-  "fonts/CormorantGaramond-500i-latin.woff2",
-  "fonts/CormorantGaramond-600-latin-ext.woff2",
-  "fonts/CormorantGaramond-600-latin.woff2",
-  "fonts/CormorantGaramond-600i-latin-ext.woff2",
-  "fonts/CormorantGaramond-600i-latin.woff2",
-  "fonts/Jost-300-latin-ext.woff2",
-  "fonts/Jost-300-latin.woff2",
-  "fonts/Jost-400-latin-ext.woff2",
-  "fonts/Jost-400-latin.woff2",
-  "fonts/Jost-500-latin-ext.woff2",
-  "fonts/Jost-500-latin.woff2"
+  "fonts/Lato-0.woff2",
+  "fonts/Lato-1.woff2",
+  "fonts/Lato-2.woff2",
+  "fonts/Lato-3.woff2",
+  "fonts/Lato-4.woff2",
+  "fonts/Lato-5.woff2",
+  "fonts/PoltawskiNowy-10.woff2",
+  "fonts/PoltawskiNowy-11.woff2",
+  "fonts/PoltawskiNowy-6.woff2",
+  "fonts/PoltawskiNowy-7.woff2",
+  "fonts/PoltawskiNowy-8.woff2",
+  "fonts/PoltawskiNowy-9.woff2"
 ];
 
 self.addEventListener("install", e => {
@@ -36,8 +34,6 @@ self.addEventListener("activate", e => {
 // Installs download with cache: "reload" so a new version never stores stale files.
 self.addEventListener("fetch", e => {
   if (e.request.method !== "GET") return;
-  // Leave the other apps on this site (/deutsch/, /polski/) to their own service workers.
-  if (/\/(deutsch|polski)\//.test(new URL(e.request.url).pathname)) return;
   if (e.request.mode === "navigate") {
     e.respondWith(fetch(e.request.url, {cache: "no-cache"}).then(r => {
       const copy = r.clone(); caches.open(VERSION).then(c => c.put("index.html", copy)); return r;
